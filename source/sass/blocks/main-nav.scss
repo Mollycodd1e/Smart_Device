@@ -140,15 +140,11 @@
 
   .main-nav__contacts-list a {
     text-decoration: none;
+    padding-top: 10px;
     color: #ffffff;
   }
 
-  li:first-child svg {
-    width: 25.33px;
-    height: 18.67px;
-  }
-
-  li:nth-child(2n + 2) svg {
+  .main-nav__contacts-list svg {
     width: 24px;
     height: 24px;
   }
