@@ -29,6 +29,7 @@
 .main-footer__logo {
   display: flex;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .main-footer__name-wrapper {
@@ -73,10 +74,12 @@
 
 .main-footer__social-list li {
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .main-footer__toggle {
   display: none;
+  cursor: pointer;
 }
 
 .main-footer__social-list li:first-child {
@@ -126,6 +129,7 @@
   font-size: 15px;
   line-height: 25px;
   opacity: 0.5;
+  cursor: pointer;
 
   color: #1b2d37;
 }
@@ -159,6 +163,7 @@
   font-size: 15px;
   line-height: 25px;
   opacity: 0.5;
+  cursor: pointer;
 
   color: #1b2d37;
 }
@@ -184,6 +189,7 @@
 
 .main-footer__copyright-list li {
   margin-left: 75px;
+  cursor: pointer;
 }
 
 .main-footer__copyright-list li:first-child {

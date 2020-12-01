@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .main-nav__logo-wrapper {
@@ -46,6 +47,7 @@
   margin-left: 8.37%;
   align-self: center;
   border: none;
+  cursor: pointer;
 
   background-color: transparent;
 }
@@ -75,6 +77,7 @@
 .main-nav__contacts-list li {
   margin-left: 86px;
   align-self: center;
+  cursor: pointer;
 }
 
 .main-nav__contacts-list li:first-child {
@@ -84,6 +87,7 @@
 .main-nav__contacts-list a {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .main-nav__contacts-list svg {
@@ -107,6 +111,7 @@
   text-decoration: none;
   text-transform: uppercase;
   box-sizing: border-box;
+  cursor: pointer;
 
   background-color: transparent;
   color: #ffffff;
