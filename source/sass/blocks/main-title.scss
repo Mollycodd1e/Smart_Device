@@ -105,7 +105,7 @@
 @media (min-width: $desktop-width) {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .main-title {
-      background-image: url("../img/background-desktop@x2.png");
+      background-image: url("../img/background-desktop@x2.png") 1906px 878px;
       background-position: center center;
       background-size: cover;
     }
