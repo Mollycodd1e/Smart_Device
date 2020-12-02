@@ -4,7 +4,7 @@
   padding-top: 315px;
   padding-left: 13%;
   padding-right: 13.9%;
-  height: 878px;
+  padding-bottom: 90px;
   background-image: url("../img/background-desktop.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -115,9 +115,9 @@
 @media (max-width: $tablet-width-only) {
   .main-title {
     padding-top: 188px;
+    padding-bottom: 163px;
     padding-left: 11.3%;
     padding-right: 23.6%;
-    height: 686px;
     background-image: url("../img/background-tablet.png");
   }
 
@@ -168,7 +168,7 @@
     padding-top: 286px;
     padding-left: 15px;
     padding-right: 18px;
-    height: 647px;
+    padding-bottom: 70px;
     background-image: url("../../img/background-mobile.png");
   }
 

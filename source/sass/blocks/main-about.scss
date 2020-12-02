@@ -1,0 +1,152 @@
+.main-about {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 60px;
+  margin-top: 10px;
+}
+
+.main-about__wrapper {
+  max-width: 1170px;
+  padding-left: 180px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  background-image: url("../../img/2005-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: left -30px top 5px;
+}
+
+.main-about__title {
+  margin: 0;
+  margin-top: 47px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+
+  color: #666666;
+}
+
+.main-about__description {
+  margin: 0;
+  margin-top: 22px;
+  padding-right: 5px;
+  font-size: 16px;
+  line-height: 21.5px;
+
+  color: #666666;
+}
+
+.main-about__description--second {
+  margin-top: 23px;
+}
+
+.main-about__dots {
+  display: none;
+}
+
+.main-about__button {
+  display: block;
+  box-sizing: border-box;
+  width: 180px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  margin-top: 41px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+  color: #00b2ff;
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-about {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 33px;
+  }
+
+  .main-about__wrapper {
+    max-width: 720px;
+    padding-left: 185px;
+    padding-bottom: 50px;
+
+    background-image: url("../img/2005-tablet.jpg");
+    background-position: left -25px top -2px;
+  }
+
+  .main-about__title {
+    margin-top: -2px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .main-about__description {
+    margin-top: 25px;
+    margin-left: 2px;
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .main-about__description--second {
+    margin-top: 22px;
+    line-height: 21.5px;
+    height: 85px;
+    overflow: hidden;
+  }
+
+  .main-about__dots {
+    display: inline;
+  }
+
+  .main-about__button {
+    margin-top: 42px;
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-about {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .main-about__wrapper {
+    max-width: 290px;
+    padding-left: 0;
+    padding-bottom: 50px;
+    background-image: none;
+  }
+
+  .main-about__title {
+    margin-top: 17px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .main-about__description {
+    margin-top: 21px;
+    padding-right: 0;
+  }
+
+  .main-about__description--second {
+    margin-top: 39px;
+    line-height: 22px;
+    height: 171px;
+    overflow: hidden;
+    white-space: pre-wrap;
+  }
+
+  .main-about__button {
+    margin-top: 34px;
+    margin-left: 2px;
+  }
+}
