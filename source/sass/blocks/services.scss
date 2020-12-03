@@ -1,0 +1,257 @@
+.services {
+  padding-top: 88px;
+  padding-bottom: 127px;
+
+  background-color: #1b2d37;
+}
+
+.services__title {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-right: 2%;
+  padding-left: 2%;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.services__list {
+  margin: 0 auto;
+  margin-top: 52px;
+  padding: 0;
+  padding-right: 2%;
+  padding-left: 2%;
+  max-width: 1247px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.services__list li {
+  position: relative;
+  width: 31.65%;
+  min-height: 620px;
+  cursor: pointer;
+}
+
+.services__list li:nth-child(3n + 2),
+.services__list li:nth-child(3n + 3) {
+  margin-left: 2.52%;
+}
+
+.services__list li:nth-child(3n + 1) div {
+  width: 100%;
+  min-height: 620px;
+  background-image: url("../img/production-desktop.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.services__list li:nth-child(3n + 2) div {
+  width: 100%;
+  min-height: 620px;
+  background-image: url("../img/mounting-desktop.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.services__list li:nth-child(3n + 3) div {
+  width: 100%;
+  min-height: 620px;
+  background-image: url("../img/accessories-desktop.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.services__list a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 620px;
+  display: block;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.services__list h3 {
+  margin-left: 44px;
+  margin-top: 50px;
+  padding-right: 160px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+}
+
+.services__list li:nth-child(3n + 3) h3 {
+  padding-right: 100px;
+}
+
+.services__list button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 63px;
+  height: 63px;
+  border: none;
+
+  background-image: url("../img/vector.svg");
+  background-repeat: no-repeat;
+  background-position: center left 31px;
+  background-color: #00b2ff;
+}
+
+@media (max-width: $tablet-width-only) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 78px;
+  }
+
+  .services__title {
+    max-width: 720px;
+    padding-left: 25px;
+    padding-right: 20px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .services__list {
+    margin-top: 40px;
+    padding-right: 29px;
+    padding-left: 26px;
+    max-width: 770px;
+    flex-direction: column;
+  }
+
+  .services__list li {
+    width: 715px;
+    min-height: 256px;
+  }
+
+  .services__list li:nth-child(3n + 4) {
+    margin-top: 55px;
+  }
+
+  .services__list li:nth-child(3n + 2) {
+    width: 720px;
+    margin-left: 0;
+    margin-top: 55px;
+  }
+
+  .services__list li:nth-child(3n + 3) {
+    width: 720px;
+    margin-left: 0;
+    margin-top: 46px;
+  }
+
+  .services__list li:nth-child(3n + 1) div {
+    min-height: 256px;
+    background-image: url("../img/production-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  .services__list li:nth-child(3n + 2) div {
+    min-height: 256px;
+    background-image: url("../img/mounting-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  .services__list li:nth-child(3n + 3) div {
+    min-height: 256px;
+    background-image: url("../img/accessories-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  .services__list a {
+    min-height: 256px;
+  }
+
+  .services__list h3 {
+    margin-left: 44px;
+    margin-top: 40px;
+    padding-right: 0;
+    width: 160px;
+  }
+
+  .services__list li:nth-child(3n + 3) h3 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .services {
+    padding-bottom: 64px;
+  }
+
+  .services__title {
+    max-width: 290px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__list {
+    margin-top: 42px;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 320px;
+  }
+
+  .services__list li {
+    width: 290px;
+    min-height: 256px;
+  }
+
+  .services__list li:nth-child(3n + 4) {
+    margin-top: 30px;
+  }
+
+  .services__list li:nth-child(3n + 2) {
+    width: 290px;
+    margin-top: 30px;
+  }
+
+  .services__list li:nth-child(3n + 3) {
+    width: 290px;
+    margin-top: 30px;
+  }
+
+  .services__list li:nth-child(3n + 1) div {
+    background-image: url("../img/production-mobile.jpg");
+  }
+
+  .services__list li:nth-child(3n + 2) div {
+    background-image: url("../img/mounting-mobile.jpg");
+  }
+
+  .services__list li:nth-child(3n + 3) div {
+    background-image: url("../img/accessories-mobile.jpg");
+  }
+
+  .services__list h3 {
+    margin-left: 34px;
+    margin-top: 20px;
+    width: 160px;
+  }
+
+  .services__list li:nth-child(3n + 3) h3 {
+    margin-top: 30px;
+    padding-right: 10px;
+  }
+
+  .services__list button {
+    background-position: center left 29px;
+  }
+}
