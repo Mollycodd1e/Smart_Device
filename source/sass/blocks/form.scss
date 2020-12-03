@@ -1,0 +1,376 @@
+.form {
+  position: relative;
+  background-color: #00b2ff;
+  padding-top: 20px;
+  min-height: 670px;
+  box-sizing: border-box;
+
+  background-image: url("../../img/form_background-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top -60px left 175px;
+}
+
+.form__wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.form form {
+  box-sizing: border-box;
+  margin-top: 71px;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form fieldset {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.form legend {
+  padding: 0;
+  margin-left: -4px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+
+  color: #ffffff;
+}
+
+.form p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.form__name-wrapper,
+.form__phone-wrapper {
+  position: relative;
+  margin-top: 51px;
+}
+
+.form input {
+  width: 270px;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  border: none;
+
+  color: #ffffff;
+  background-color: transparentize($color: #ffffff, $amount: 0.9);
+}
+
+.form input::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.form__phone-wrapper {
+  margin-left: 31px;
+  width: 269px;
+}
+
+.form__phone-wrapper input {
+  width: 269px;
+}
+
+.form label {
+  position: absolute;
+  font-size: 16px;
+  line-height: 22px;
+  top: 12px;
+  left: 16px;
+
+  color: #ffffff;
+}
+
+.form__textarea-wrapper {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.form textarea {
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  min-height: 154px;
+  box-sizing: border-box;
+  padding: 11px 16px;
+  position: relative;
+  border: none;
+
+  color: #ffffff;
+  background-color: transparentize($color: #ffffff, $amount: 0.9);
+}
+
+.form textarea::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.form button {
+  box-sizing: border-box;
+  margin-top: 37px;
+  width: 270px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  letter-spacing: 0.05em;
+  border-radius: 5px;
+  text-transform: uppercase;
+
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparentize(#ffffff, 0.9);
+}
+
+.form__checkbox-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 25px;
+  padding-top: 7px;
+  padding-left: 53px;
+  line-height: 16px;
+  width: 269px;
+}
+
+.form__checkbox-wrapper label {
+  position: relative;
+  width: 269px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.form__checkbox-wrapper input:not(:checked) + label::before {
+  content: "";
+
+  position: absolute;
+  left: -31px;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.form__checkbox-wrapper input:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -31px;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 7px 4px;
+  background-position: center center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: $tablet-width-only) {
+  .form {
+    padding-top: 20px;
+    min-height: 664px;
+    background-image: none;
+  }
+
+  .form__wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .form form {
+    box-sizing: border-box;
+    margin-left: 52px;
+    margin-top: 60px;
+    width: 620px;
+  }
+
+  .form legend {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .form p {
+    margin-top: 16px;
+  }
+
+  .form__name-wrapper,
+  .form__phone-wrapper {
+    margin-top: 54px;
+  }
+
+  .form input {
+    width: 280px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+  }
+
+  .form__phone-wrapper {
+    margin-left: 31px;
+    width: 279px;
+  }
+
+  .form__phone-wrapper input {
+    width: 279px;
+  }
+
+  .form label {
+    left: 17px;
+  }
+
+  .form__textarea-wrapper {
+    margin-top: 41px;
+  }
+
+  .form textarea {
+    min-height: 160px;
+  }
+
+  .form button {
+    margin-top: 38px;
+    width: 280px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+
+  .form__checkbox-wrapper {
+    padding-top: 9px;
+    padding-left: 55px;
+  }
+
+  .form__checkbox-wrapper input:not(:checked) + label::before {
+    left: -33px;
+    width: 15px;
+    height: 14px;
+  }
+
+  .form__checkbox-wrapper input:checked + label::after {
+    left: -33px;
+    width: 15px;
+    height: 14px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .form {
+    padding-top: 20px;
+    padding-bottom: 41px;
+    min-height: 600px;
+    background-image: none;
+  }
+
+  .form fieldset {
+    flex-direction: column;
+  }
+
+  .form__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .form form {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 320px;
+  }
+
+  .form legend {
+    margin-left: 0;
+    width: 290px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .form p {
+    width: 290px;
+    margin-top: 13px;
+  }
+
+  .form__name-wrapper,
+  .form__phone-wrapper {
+    width: 290px;
+    margin-top: 26px;
+  }
+
+  .form input {
+    width: 290px;
+  }
+
+  .form__phone-wrapper {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 290px;
+  }
+
+  .form__phone-wrapper input {
+    width: 290px;
+  }
+
+  .form label {
+    left: 17px;
+  }
+
+  .form__textarea-wrapper {
+    margin-top: 30px;
+  }
+
+  .form textarea {
+    min-height: 104px;
+  }
+
+  .form button {
+    margin-top: 24px;
+    width: 290px;
+  }
+
+  .form__checkbox-wrapper {
+    width: 290px;
+    padding-top: 9px;
+    padding-left: 18px;
+    padding-bottom: 12px;
+    margin: 0 auto;
+    margin-top: 8px;
+  }
+
+  .form__checkbox-wrapper input:not(:checked) + label::before {
+    left: -35px;
+  }
+
+  .form__checkbox-wrapper input:checked + label::after {
+    left: -35px;
+  }
+}

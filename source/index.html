@@ -128,6 +128,33 @@
         </li>
       </ul>
     </section>
+    <section class="form">
+      <div class="form__wrapper">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend> Остались вопросы? Задайте их нам!</legend>
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <div class="form__name-wrapper">
+              <input type="text" name="name" id="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]{2,64}" title="Минимум 2 буквы любого алфавита" required>
+              <label for="name" class="visually-hidden">Имя</label>
+            </div>
+            <div class="form__phone-wrapper">
+              <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" title="Пример: (+7/8)********** (10 цифр)" maxlength="12" required>
+              <label for="phone" class="visually-hidden">Телефон</label>
+            </div>
+            <div class="form__textarea-wrapper">
+              <textarea name="question" id="question" placeholder="Ваш вопрос" required></textarea>
+              <label for="question" class="visually-hidden">Ваш вопрос</label>
+            </div>
+            <button type="submit">Задать вопрос</button>
+            <div class="form__checkbox-wrapper">
+              <input class="visually-hidden" type="checkbox" name="data-processing" id="data-processing" checked required>
+              <label for="data-processing">Я согласен на обработку персональных данных</label>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">

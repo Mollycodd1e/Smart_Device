@@ -27,6 +27,29 @@
 'use strict';
 
 (function () {
+  var form = document.querySelector('.form');
+
+  if (document.querySelector('.form')) {
+    var nameInput = form.querySelector('.form__name-wrapper input');
+    var inputLabel = form.querySelector('.form__name-wrapper label');
+
+    nameInput.addEventListener('focus', function () {
+      inputLabel.style = 'display: none';
+    });
+
+    nameInput.addEventListener('blur', function () {
+      if (nameInput.length < 0) {
+        inputLabel.style = 'display: block';
+      } else {
+        inputLabel.style = 'display: none';
+      }
+    });
+  }
+})();
+
+'use strict';
+
+(function () {
   var sectionList = document.querySelector('.main-footer__sections-wrapper');
 
   if (document.querySelector('.main-footer__sections-wrapper')) {
