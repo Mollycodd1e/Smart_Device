@@ -12,7 +12,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 
-  background-image: url("../../img/2005-desktop.jpg");
+  background-image: url("../img/2005-desktop.jpg");
   background-repeat: no-repeat;
   background-position: left -30px top 5px;
 }
@@ -65,6 +65,14 @@
   color: #00b2ff;
 }
 
+@media (min-width: $desktop-width) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-about__wrapper {
+      background-image: url("../img/2005-desktop@x2.jpg") 317px 220px;
+    }
+  }
+}
+
 @media (max-width: $tablet-width-only) {
   .main-about {
     margin-left: 3%;
@@ -110,6 +118,14 @@
   .main-about__button {
     margin-top: 42px;
     margin-left: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .main-about__wrapper {
+        background-image: url("../img/2005-tabletp@x2.jpg") 362px 251px;
+      }
+    }
   }
 }
 

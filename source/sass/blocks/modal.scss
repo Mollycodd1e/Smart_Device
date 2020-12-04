@@ -1,0 +1,254 @@
+.modal {
+  position: absolute;
+  top: 136px;
+  left: 50%;
+  margin-left: -245px;
+  padding-top: 30px;
+  min-height: 605px;
+  box-sizing: border-box;
+
+  background-color: #00b2ff;
+  z-index: 100;
+}
+
+.modal--closed {
+  display: none;
+}
+
+.modal--opened {
+  display: block;
+}
+
+.modal__wrapper {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.modal form {
+  box-sizing: border-box;
+  width: 490px;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.modal fieldset {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.modal legend {
+  padding: 0;
+  font-size: 28px;
+  line-height: 39px;
+  font-weight: 400;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+
+  color: #ffffff;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-top: 12px;
+  padding-right: 30px;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+
+  color: #ffffff;
+}
+
+.modal__name-wrapper,
+.modal__phone-wrapper {
+  position: relative;
+  margin-top: 32px;
+}
+
+.modal input {
+  width: 411px;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 22px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  border: none;
+
+  color: #ffffff;
+  background-color: transparentize($color: #ffffff, $amount: 0.9);
+}
+
+.modal input::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.modal__phone-wrapper {
+  width: 411px;
+  margin-top: 30px;
+}
+
+.modal__phone-wrapper input {
+  width: 411px;
+}
+
+.modal label {
+  position: absolute;
+  font-size: 16px;
+  line-height: 22px;
+  top: 12px;
+  left: 16px;
+
+  color: #ffffff;
+}
+
+.modal__textarea-wrapper {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.modal textarea {
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  min-height: 104px;
+  box-sizing: border-box;
+  padding: 12px 23px;
+  position: relative;
+  border: none;
+
+  color: #ffffff;
+  background-color: transparentize($color: #ffffff, $amount: 0.9);
+}
+
+.modal textarea::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.modal button {
+  box-sizing: border-box;
+  margin-top: 25px;
+  width: 411px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  letter-spacing: 0.05em;
+  border-radius: 5px;
+  text-transform: uppercase;
+
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparentize(#ffffff, 0.9);
+}
+
+.modal__close-wrapper {
+  width: 25px;
+  height: 25px;
+  top: 16px;
+  right: 16px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.modal__close-wrapper button {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  z-index: 123;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    width: 23px;
+    height: 1px;
+
+    background-color: #ffffff;
+    z-index: 123;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__checkbox-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 15px;
+  padding-top: 7px;
+  padding-left: 32px;
+  padding-right: 22px;
+  line-height: 16px;
+  width: 411px;
+}
+
+.modal__checkbox-wrapper label {
+  position: relative;
+  width: 411px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+  white-space: pre-wrap;
+  opacity: 0.8;
+}
+
+.modal__checkbox-wrapper input:not(:checked) + label::before {
+  content: "";
+
+  position: absolute;
+  left: -48px;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__checkbox-wrapper input:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -48px;
+  top: 1px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 7px 4px;
+  background-position: center center;
+  background-color: transparent;
+  cursor: pointer;
+}

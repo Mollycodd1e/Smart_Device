@@ -5,7 +5,7 @@
   min-height: 670px;
   box-sizing: border-box;
 
-  background-image: url("../../img/form_background-desktop.png");
+  background-image: url("../img/form_background-desktop.png");
   background-repeat: no-repeat;
   background-position: top -60px left 175px;
 }
@@ -198,6 +198,15 @@
   background-position: center center;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media (min-width: $desktop-width) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .form {
+      background-image: url("../img/form_background-desktop@x2.png") 1920px 670px;
+      background-position: top -60px left 175px;
+    }
+  }
 }
 
 @media (max-width: $tablet-width-only) {

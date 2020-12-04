@@ -108,6 +108,22 @@
   background-color: #00b2ff;
 }
 
+@media (min-width: $desktop-width) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .services__list li:nth-child(3n + 1) div {
+      background-image: url("../img/production-desktop@x2.jpg") 370px 620px;
+    }
+
+    .services__list li:nth-child(3n + 2) div {
+      background-image: url("../img/mounting-desktop@x2.jpg") 370px 620px;
+    }
+
+    .services__list li:nth-child(3n + 3) div {
+      background-image: url("../img/accessories-desktop@x2.jpg") 370px 620px;
+    }
+  }
+}
+
 @media (max-width: $tablet-width-only) {
   .services {
     padding-top: 50px;
@@ -189,6 +205,20 @@
   .services__list li:nth-child(3n + 3) h3 {
     margin-top: 50px;
   }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .services__list li:nth-child(3n + 1) div {
+      background-image: url("../img/production-tablet@x2.jpg") 720px 256px;
+    }
+
+    .services__list li:nth-child(3n + 2) div {
+      background-image: url("../img/mounting-tablet@x2.jpg") 720px 256px;
+    }
+
+    .services__list li:nth-child(3n + 3) div {
+      background-image: url("../img/accessories-tablet@x2.jpg") 720px 256px;
+    }
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -253,5 +283,19 @@
 
   .services__list button {
     background-position: center left 29px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .services__list li:nth-child(3n + 1) div {
+      background-image: url("../img/production-mobile@x2.jpg") 290px 256px;
+    }
+
+    .services__list li:nth-child(3n + 2) div {
+      background-image: url("../img/mounting-mobile@x2.jpg") 290px 256px;
+    }
+
+    .services__list li:nth-child(3n + 3) div {
+      background-image: url("../img/accessories-mobile@x2.jpg") 290px 256px;
+    }
   }
 }

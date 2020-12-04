@@ -67,7 +67,7 @@
   <header class="main-header">
     <nav class="main-nav">
       <a class="main-nav__logo" href="#">
-        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="#icon-logo"></use>
         </svg>
         <div class="main-nav__logo-wrapper">
@@ -81,7 +81,7 @@
       <ul class="main-nav__contacts-list">
         <li>
           <a href="mailto:info@sd.ru" aria-label="Почта для связи">
-            <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="19" height="14" viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-mail"></use>
             </svg>
             <span>info@sd.ru</span>
@@ -89,7 +89,7 @@
         </li>
         <li>
           <a href="tel:+74950005252" aria-label="Телефон для связи">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-phone"></use>
             </svg>
             <span>+7 (495) 000 52 52</span>
@@ -179,7 +179,7 @@
         </li>
       </ul>
     </section>
-    <section class="form">
+    <section class="form" id="form">
       <div class="form__wrapper">
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
@@ -300,6 +300,38 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal--closed">
+    <div class="form__wrapper">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <div class="modal__close-wrapper">
+            <button type="button">
+              <span class="visually-hidden">Кнопка закрытия модального окна</span>
+            </button>
+          </div>
+          <legend>Закажите звонок</legend>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <div class="modal__name-wrapper">
+            <input type="text" name="modal-name" id="modal-name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]{2,64}" title="Минимум 2 буквы любого алфавита" autofocus="" required="">
+            <label for="modal-name" class="visually-hidden">Имя</label>
+          </div>
+          <div class="modal__phone-wrapper">
+            <input type="tel" id="modal-phone" name="modal-phone" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" title="Пример: (+7/8)********** (10 цифр)" maxlength="12" required="">
+            <label for="modal-phone" class="visually-hidden">Телефон</label>
+          </div>
+          <div class="modal__textarea-wrapper">
+            <textarea name="modal-question" id="modal-question" placeholder="Ваш вопрос" required=""></textarea>
+            <label for="modal-question" class="visually-hidden">Ваш вопрос</label>
+          </div>
+          <button type="submit">Отправить</button>
+          <div class="modal__checkbox-wrapper">
+            <input class="visually-hidden" type="checkbox" name="modal-data-processing" id="modal-data-processing" checked="" required="">
+            <label for="modal-data-processing">Я согласен на обработку  персональных данных</label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
   <script src="js/main.js"></script>
 </body>
 </html>
