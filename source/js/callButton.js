@@ -8,6 +8,7 @@
     var modalOpenButton = navigation.querySelector('.main-nav__call-button');
     var modalCloseButton = modal.querySelector('.modal__close-wrapper button');
     var nameInput = modal.querySelector('.modal__name-wrapper input');
+    var blackLayer = document.querySelector('.black-layer');
 
     var closeModalOnEsc = function (evtBoard) {
       if ((evtBoard.key === 'Escape') && (modal.classList.contains('modal--opened'))) {
@@ -17,11 +18,19 @@
       }
     };
 
+    blackLayer.addEventListener('click', function () {
+      nameInput.blur();
+      modal.classList.remove('modal--opened');
+      modal.classList.add('modal--closed');
+      blackLayer.style = 'display: none;';
+    });
+
     modalOpenButton.addEventListener('click', function () {
       if (modal.classList.contains('modal--closed')) {
         modal.classList.remove('modal--closed');
         modal.classList.add('modal--opened');
         nameInput.focus();
+        blackLayer.style = 'display: block;';
       }
     });
 
@@ -30,6 +39,7 @@
         nameInput.blur();
         modal.classList.remove('modal--opened');
         modal.classList.add('modal--closed');
+        blackLayer.style = 'display: none;';
       }
     });
 
