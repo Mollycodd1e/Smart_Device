@@ -63,6 +63,8 @@
 }
 
 .form input {
+  appearance: none;
+  border: none;
   width: 270px;
   font-size: 16px;
   line-height: 22px;
@@ -70,7 +72,6 @@
   padding-top: 13px;
   padding-bottom: 15px;
   box-sizing: border-box;
-  border: none;
 
   color: #ffffff;
   background-color: transparentize($color: #ffffff, $amount: 0.9);
