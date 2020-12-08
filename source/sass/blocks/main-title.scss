@@ -17,7 +17,7 @@
   width: 1408px;
 }
 
-.main-title__name {
+.main-title h1 {
   margin: 0;
   font-size: 80px;
   line-height: 94px;
@@ -29,7 +29,7 @@
   color: #ffffff;
 }
 
-.main-title__description {
+.main-title p {
   position: relative;
   margin: 0;
   margin-top: 27px;
@@ -125,12 +125,12 @@
     width: 500px;
   }
 
-  .main-title__name {
+  .main-title h1 {
     font-size: 60px;
     line-height: 70px;
   }
 
-  .main-title__description {
+  .main-title p {
     margin-top: 29px;
     padding-left: 50px;
     width: 340px;
@@ -169,19 +169,19 @@
     padding-left: 15px;
     padding-right: 18px;
     padding-bottom: 70px;
-    background-image: url("../../img/background-mobile.png");
+    background-image: url("../img/background-mobile.png");
   }
 
   .main-title__wrapper {
     width: 287px;
   }
 
-  .main-title__name {
+  .main-title h1 {
     font-size: 40px;
     line-height: 47px;
   }
 
-  .main-title__description {
+  .main-title p {
     margin-top: 27px;
     padding-left: 51px;
     width: 221px;

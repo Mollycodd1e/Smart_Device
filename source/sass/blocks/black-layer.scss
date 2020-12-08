@@ -9,3 +9,11 @@
 
   background-color: #000000;
 }
+
+.modal--opened .black-layer {
+  display: block;
+}
+
+.modal--closed .black-layer {
+  display: none;
+}

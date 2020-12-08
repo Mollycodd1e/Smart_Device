@@ -16,7 +16,7 @@
   list-style: none;
 }
 
-.main-advantages__list li {
+.main-advantages__item {
   padding-top: 40px;
   padding-left: 43px;
   padding-right: 36px;
@@ -31,11 +31,11 @@
   background-color: #ffffff;
 }
 
-.main-advantages__list li:nth-child(2n + 2) {
+.main-advantages__item:nth-child(2n + 2) {
   margin-left: 2%;
 }
 
-.main-advantages__list li:nth-child(4n + 3) {
+.main-advantages__item:nth-child(4n + 3) {
   padding-top: 44px;
 }
 
@@ -64,23 +64,23 @@
   color: #666666;
 }
 
-.main-advantages__list li:hover,
-.main-advantages__list li:focus {
+.main-advantages__item:hover,
+.main-advantages__item:focus {
   background-color: #00b2ff;
   border: 1px solid #00b2ff;
 
   color: #ffffff;
 }
 
-.main-advantages__list li:hover p,
-.main-advantages__list li:focus p,
-.main-advantages__list li:hover h3,
-.main-advantages__list li:focus h3 {
+.main-advantages__item:hover p,
+.main-advantages__item:focus p,
+.main-advantages__item:hover h3,
+.main-advantages__item:focus h3 {
   color: #ffffff;
 }
 
-.main-advantages__list li:hover svg,
-.main-advantages__list li:focus svg {
+.main-advantages__item:hover svg,
+.main-advantages__item:focus svg {
   fill: #ffffff;
 }
 
@@ -95,7 +95,7 @@
     max-width: 720px;
   }
 
-  .main-advantages__list li {
+  .main-advantages__item {
     padding-top: 23px;
     padding-left: 25px;
     padding-right: 20px;
@@ -105,16 +105,16 @@
     min-height: 306px;
   }
 
-  .main-advantages__list li:nth-child(4n + 2) {
+  .main-advantages__item:nth-child(4n + 2) {
     padding-top: 25px;
   }
 
-  .main-advantages__list li:nth-child(4n + 3) {
+  .main-advantages__item:nth-child(4n + 3) {
     padding-top: 29px;
   }
 
-  .main-advantages__list li:nth-child(4n + 3),
-  .main-advantages__list li:nth-child(4n + 4) {
+  .main-advantages__item:nth-child(4n + 3),
+  .main-advantages__item:nth-child(4n + 4) {
     min-height: 232px;
   }
 
@@ -127,22 +127,22 @@
     white-space: normal;
   }
 
-  .main-advantages__list li:nth-child(4n + 2) svg,
-  .main-advantages__list li:nth-child(4n + 4) svg {
+  .main-advantages__item:nth-child(4n + 2) svg,
+  .main-advantages__item:nth-child(4n + 4) svg {
     width: 32px;
     height: 32px;
   }
 
-  .main-advantages__list li:nth-child(4n + 3) svg {
+  .main-advantages__item:nth-child(4n + 3) svg {
     width: 30px;
     height: 26px;
   }
 
-  .main-advantages__list li:nth-child(4n + 3) p {
+  .main-advantages__item:nth-child(4n + 3) p {
     margin-top: 16px;
   }
 
-  .main-advantages__list li:nth-child(4n + 4) h3 {
+  .main-advantages__item:nth-child(4n + 4) h3 {
     margin-top: 5px;
   }
 }
@@ -157,7 +157,7 @@
     width: 292px;
   }
 
-  .main-advantages__list li {
+  .main-advantages__item {
     padding-top: 25px;
     padding-right: 15px;
     margin-bottom: 20px;
@@ -165,21 +165,21 @@
     min-height: 310px;
   }
 
-  .main-advantages__list li:nth-child(2n + 2) {
+  .main-advantages__item:nth-child(2n + 2) {
     margin-left: 0;
   }
 
-  .main-advantages__list li:nth-child(4n + 2) {
+  .main-advantages__item:nth-child(4n + 2) {
     padding-top: 27px;
     padding-right: 10px;
   }
 
-  .main-advantages__list li:nth-child(4n + 3) {
+  .main-advantages__item:nth-child(4n + 3) {
     padding-top: 25px;
     padding-right: 30px;
   }
 
-  .main-advantages__list li:nth-child(4n + 4) {
+  .main-advantages__item:nth-child(4n + 4) {
     min-height: 244px;
   }
 
@@ -194,15 +194,15 @@
     white-space: normal;
   }
 
-  .main-advantages__list li:nth-child(4n + 3) p {
+  .main-advantages__item:nth-child(4n + 3) p {
     margin-top: -8px;
   }
 
-  .main-advantages__list li:nth-child(4n + 4) h3 {
+  .main-advantages__item:nth-child(4n + 4) h3 {
     margin-top: 6px;
   }
 
-  .main-advantages__list li:nth-child(4n + 4) p {
+  .main-advantages__item:nth-child(4n + 4) p {
     margin-top: 11px;
   }
 }

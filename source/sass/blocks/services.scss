@@ -32,19 +32,19 @@
   list-style: none;
 }
 
-.services__list li {
+.services__item {
   position: relative;
   width: 31.65%;
   min-height: 620px;
   cursor: pointer;
 }
 
-.services__list li:nth-child(3n + 2),
-.services__list li:nth-child(3n + 3) {
+.services__item:nth-child(3n + 2),
+.services__item:nth-child(3n + 3) {
   margin-left: 2.52%;
 }
 
-.services__list li:nth-child(3n + 1) div {
+.services__item:nth-child(3n + 1) div {
   width: 100%;
   min-height: 620px;
   background-image: url("../img/production-desktop.jpg");
@@ -53,7 +53,7 @@
   opacity: 0.2;
 }
 
-.services__list li:nth-child(3n + 2) div {
+.services__item:nth-child(3n + 2) div {
   width: 100%;
   min-height: 620px;
   background-image: url("../img/mounting-desktop.jpg");
@@ -62,7 +62,7 @@
   opacity: 0.2;
 }
 
-.services__list li:nth-child(3n + 3) div {
+.services__item:nth-child(3n + 3) div {
   width: 100%;
   min-height: 620px;
   background-image: url("../img/accessories-desktop.jpg");
@@ -93,7 +93,7 @@
   font-family: "RobotoCondensed", "Arial", sans-serif;
 }
 
-.services__list li:nth-child(3n + 3) h3 {
+.services__item:nth-child(3n + 3) h3 {
   padding-right: 100px;
 }
 
@@ -114,15 +114,15 @@
 
 @media (min-width: $desktop-width) {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .services__list li:nth-child(3n + 1) div {
+    .services__item:nth-child(3n + 1) div {
       background-image: url("../img/production-desktop@x2.jpg") 370px 620px;
     }
 
-    .services__list li:nth-child(3n + 2) div {
+    .services__item:nth-child(3n + 2) div {
       background-image: url("../img/mounting-desktop@x2.jpg") 370px 620px;
     }
 
-    .services__list li:nth-child(3n + 3) div {
+    .services__item:nth-child(3n + 3) div {
       background-image: url("../img/accessories-desktop@x2.jpg") 370px 620px;
     }
   }
@@ -150,28 +150,28 @@
     flex-direction: column;
   }
 
-  .services__list li {
+  .services__item {
     width: 715px;
     min-height: 256px;
   }
 
-  .services__list li:nth-child(3n + 4) {
+  .services__item:nth-child(3n + 4) {
     margin-top: 55px;
   }
 
-  .services__list li:nth-child(3n + 2) {
+  .services__item:nth-child(3n + 2) {
     width: 720px;
     margin-left: 0;
     margin-top: 55px;
   }
 
-  .services__list li:nth-child(3n + 3) {
+  .services__item:nth-child(3n + 3) {
     width: 720px;
     margin-left: 0;
     margin-top: 46px;
   }
 
-  .services__list li:nth-child(3n + 1) div {
+  .services__item:nth-child(3n + 1) div {
     min-height: 256px;
     background-image: url("../img/production-tablet.jpg");
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@
     opacity: 0.2;
   }
 
-  .services__list li:nth-child(3n + 2) div {
+  .services__item:nth-child(3n + 2) div {
     min-height: 256px;
     background-image: url("../img/mounting-tablet.jpg");
     background-repeat: no-repeat;
@@ -187,7 +187,7 @@
     opacity: 0.2;
   }
 
-  .services__list li:nth-child(3n + 3) div {
+  .services__item:nth-child(3n + 3) div {
     min-height: 256px;
     background-image: url("../img/accessories-tablet.jpg");
     background-repeat: no-repeat;
@@ -206,20 +206,20 @@
     width: 160px;
   }
 
-  .services__list li:nth-child(3n + 3) h3 {
+  .services__item:nth-child(3n + 3) h3 {
     margin-top: 50px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .services__list li:nth-child(3n + 1) div {
+    .services__item:nth-child(3n + 1) div {
       background-image: url("../img/production-tablet@x2.jpg") 720px 256px;
     }
 
-    .services__list li:nth-child(3n + 2) div {
+    .services__item:nth-child(3n + 2) div {
       background-image: url("../img/mounting-tablet@x2.jpg") 720px 256px;
     }
 
-    .services__list li:nth-child(3n + 3) div {
+    .services__item:nth-child(3n + 3) div {
       background-image: url("../img/accessories-tablet@x2.jpg") 720px 256px;
     }
   }
@@ -243,34 +243,34 @@
     max-width: 320px;
   }
 
-  .services__list li {
+  .services__item {
     width: 290px;
     min-height: 256px;
   }
 
-  .services__list li:nth-child(3n + 4) {
+  .services__item:nth-child(3n + 4) {
     margin-top: 30px;
   }
 
-  .services__list li:nth-child(3n + 2) {
+  .services__item:nth-child(3n + 2) {
     width: 290px;
     margin-top: 30px;
   }
 
-  .services__list li:nth-child(3n + 3) {
+  .services__item:nth-child(3n + 3) {
     width: 290px;
     margin-top: 30px;
   }
 
-  .services__list li:nth-child(3n + 1) div {
+  .services__item:nth-child(3n + 1) div {
     background-image: url("../img/production-mobile.jpg");
   }
 
-  .services__list li:nth-child(3n + 2) div {
+  .services__item:nth-child(3n + 2) div {
     background-image: url("../img/mounting-mobile.jpg");
   }
 
-  .services__list li:nth-child(3n + 3) div {
+  .services__item:nth-child(3n + 3) div {
     background-image: url("../img/accessories-mobile.jpg");
   }
 
@@ -280,7 +280,7 @@
     width: 160px;
   }
 
-  .services__list li:nth-child(3n + 3) h3 {
+  .services__item:nth-child(3n + 3) h3 {
     margin-top: 30px;
     padding-right: 10px;
   }
@@ -290,15 +290,15 @@
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .services__list li:nth-child(3n + 1) div {
+    .services__item:nth-child(3n + 1) div {
       background-image: url("../img/production-mobile@x2.jpg") 290px 256px;
     }
 
-    .services__list li:nth-child(3n + 2) div {
+    .services__item:nth-child(3n + 2) div {
       background-image: url("../img/mounting-mobile@x2.jpg") 290px 256px;
     }
 
-    .services__list li:nth-child(3n + 3) div {
+    .services__item:nth-child(3n + 3) div {
       background-image: url("../img/accessories-mobile@x2.jpg") 290px 256px;
     }
   }

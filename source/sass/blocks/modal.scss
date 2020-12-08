@@ -1,13 +1,9 @@
 .modal {
   position: fixed;
-  top: 136px;
-  left: 50%;
-  margin-left: -245px;
-  padding-top: 30px;
-  min-height: 605px;
+  width: 100%;
+  height: 100%;
+  top: 0;
   box-sizing: border-box;
-
-  background-color: #00b2ff;
   z-index: 100;
 }
 
@@ -20,8 +16,16 @@
 }
 
 .modal__wrapper {
+  position: relative;
+  top: 136px;
+  padding-top: 33px;
   max-width: 490px;
+  min-height: 605px;
   margin: 0 auto;
+  z-index: 120;
+  box-sizing: border-box;
+
+  background-color: #00b2ff;
 }
 
 .modal form {

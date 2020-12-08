@@ -22,7 +22,6 @@
       nameInput.blur();
       modal.classList.remove('modal--opened');
       modal.classList.add('modal--closed');
-      blackLayer.style = 'display: none;';
     });
 
     modalOpenButton.addEventListener('click', function () {
@@ -30,7 +29,6 @@
         modal.classList.remove('modal--closed');
         modal.classList.add('modal--opened');
         nameInput.focus();
-        blackLayer.style = 'display: block;';
       }
     });
 
@@ -39,7 +37,6 @@
         nameInput.blur();
         modal.classList.remove('modal--opened');
         modal.classList.add('modal--closed');
-        blackLayer.style = 'display: none;';
       }
     });
 

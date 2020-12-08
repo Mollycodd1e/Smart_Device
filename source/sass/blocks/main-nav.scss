@@ -185,11 +185,7 @@
     margin-left: 23px;
   }
 
-  li:first-child svg {
-    margin-top: -2px;
-  }
-
-  li:nth-child(2n + 2) svg {
+  .main-nav__contacts-list svg {
     margin-top: -2px;
   }
 }
