@@ -25,7 +25,7 @@
   width: 48.7%;
   min-height: 299px;
   border: 1px solid #ebebeb;
-  border-left: 2px solid #00b2ff;
+  border-left: 2px solid $form-color;
   box-sizing: border-box;
 
   background-color: #ffffff;
@@ -45,13 +45,13 @@
   font-size: 24px;
   line-height: 34px;
   font-weight: 400;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
 
-  color: #00b2ff;
+  color: $form-color;
 }
 
 .main-advantages__list svg {
-  fill: #00b2ff;
+  fill: $form-color;
 }
 
 .main-advantages__list p {
@@ -61,27 +61,27 @@
   margin-top: 16px;
   white-space: pre-wrap;
 
-  color: #666666;
+  color: $about-text;
 }
 
 .main-advantages__item:hover,
 .main-advantages__item:focus {
-  background-color: #00b2ff;
-  border: 1px solid #00b2ff;
+  background-color: $form-color;
+  border: 1px solid $form-color;
 
-  color: #ffffff;
+  color: $focus-color;
 }
 
 .main-advantages__item:hover p,
 .main-advantages__item:focus p,
 .main-advantages__item:hover h3,
 .main-advantages__item:focus h3 {
-  color: #ffffff;
+  color: $focus-color;
 }
 
 .main-advantages__item:hover svg,
 .main-advantages__item:focus svg {
-  fill: #ffffff;
+  fill: $focus-color;
 }
 
 @media (max-width: $tablet-width-only) {

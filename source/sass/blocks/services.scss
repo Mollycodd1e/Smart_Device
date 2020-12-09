@@ -13,10 +13,10 @@
   font-size: 36px;
   line-height: 51px;
   font-weight: 400;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
   text-align: left;
 
-  color: #ffffff;
+  color: $service-text;
 }
 
 .services__list {
@@ -80,7 +80,12 @@
   display: block;
   text-decoration: none;
 
-  color: #ffffff;
+  color: $service-text;
+}
+
+.services__list a:hover,
+.services__list a:focus {
+  outline-color: $form-color;
 }
 
 .services__list h3 {
@@ -90,7 +95,7 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
 }
 
 .services__item:nth-child(3n + 3) h3 {
@@ -109,7 +114,7 @@
   background-image: url("../img/icon-vector.svg");
   background-repeat: no-repeat;
   background-position: center left 31px;
-  background-color: #00b2ff;
+  background-color: $form-color;
 }
 
 @media (min-width: $desktop-width) {

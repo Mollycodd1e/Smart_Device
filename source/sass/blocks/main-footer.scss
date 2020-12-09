@@ -15,7 +15,7 @@
     height: 1px;
     opacity: 0.2;
 
-    background-color: #626962;
+    background-color: $line-color;
   }
 }
 
@@ -42,7 +42,7 @@
   margin: 0;
   font-size: 25px;
   line-height: 29px;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
   font-weight: 700;
 
   color: #203c42;
@@ -53,7 +53,7 @@
   margin-top: 2px;
   font-size: 12px;
   line-height: 14px;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: $roboto-condensed;
   font-weight: 500;
 
   color: #788891;
@@ -110,11 +110,11 @@
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #1b2d37;
+  color: $footer-text;
 }
 
 .main-footer__sections-list li:nth-child(8n + 5),
@@ -131,7 +131,7 @@
   opacity: 0.5;
   cursor: pointer;
 
-  color: #1b2d37;
+  color: $footer-text;
 }
 
 .main-footer__contacts-wrapper {
@@ -144,11 +144,11 @@
   font-size: 15px;
   line-height: 16px;
   font-weight: 400;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #1b2d37;
+  color: $footer-text;
 }
 
 .main-footer__contacts-list {
@@ -165,7 +165,7 @@
   opacity: 0.5;
   cursor: pointer;
 
-  color: #1b2d37;
+  color: $footer-text;
 }
 
 .main-footer__copyright-wrapper {
@@ -184,7 +184,7 @@
   list-style: none;
   opacity: 0.5;
 
-  color: #1b2d37;
+  color: $footer-text;
 }
 
 .main-footer__copyright-list li {
@@ -204,7 +204,7 @@
   text-decoration: none;
   margin-left: 67px;
 
-  color: #1b2d37;
+  color: $footer-text;
 }
 
 @media (max-width: $tablet-width-only) {
@@ -284,7 +284,7 @@
     list-style: none;
     opacity: 0.5;
 
-    color: #1b2d37;
+    color: $footer-text;
   }
 
   .main-footer__copyright-list li {
@@ -363,7 +363,7 @@
       height: 1px;
       opacity: 0.2;
 
-      background-color: #626962;
+      background-color: $line-color;
     }
   }
 
@@ -390,7 +390,7 @@
       height: 1px;
       opacity: 0.2;
 
-      background-color: #626962;
+      background-color: $line-color;
     }
 
     &::after {
@@ -404,7 +404,7 @@
       height: 1px;
       opacity: 0.2;
 
-      background-color: #626962;
+      background-color: $line-color;
     }
   }
 
@@ -482,7 +482,7 @@
       height: 1px;
       opacity: 0.2;
 
-      background-color: #626962;
+      background-color: $line-color;
     }
   }
 
@@ -510,7 +510,7 @@
     text-align: center;
     opacity: 0.5;
 
-    color: #1b2d37;
+    color: $footer-text;
   }
 
   .main-footer__copyright-list li {

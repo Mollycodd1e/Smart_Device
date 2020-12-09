@@ -23,17 +23,17 @@
   margin: 0;
   font-size: 25px;
   line-height: 29px;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
   font-weight: 700;
 
-  color: #ffffff;
+  color: $nav-color;
 }
 
 .main-nav__logo-description {
   margin: 0;
   font-size: 12px;
   line-height: 14px;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: $roboto;
   font-weight: 500;
 
   color: #788891;
@@ -86,7 +86,7 @@
 
 .main-nav__contacts-list a {
   text-decoration: none;
-  color: #ffffff;
+  color: $nav-color;
   cursor: pointer;
 }
 
@@ -114,7 +114,7 @@
   cursor: pointer;
 
   background-color: transparent;
-  color: #ffffff;
+  color: $nav-color;
 }
 
 @media (max-width: $tablet-width-only) {
@@ -146,7 +146,7 @@
   .main-nav__contacts-list a {
     text-decoration: none;
     padding-top: 10px;
-    color: #ffffff;
+    color: $nav-color;
   }
 
   .main-nav__contacts-list svg {

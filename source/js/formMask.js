@@ -6,36 +6,35 @@
 
   if ((document.querySelector('.form')) || (document.querySelector('.modal'))) {
 
-    var phoneNumberInput = form.querySelector('.form__phone-wrapper input');
-    var phoneModalInput = modalForm.querySelector('.modal__phone-wrapper input');
+    var formPhoneInput = form.querySelector('.form__phone-wrapper input');
+    var modalPhoneInput = modalForm.querySelector('.modal__phone-wrapper input');
 
-    var formTelefonMask = function (formInput) {
-      formInput.addEventListener('focus', function () {
-        if (formInput.value === '') {
-          formInput.value = '+7(';
-        }
-      });
+    var maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
 
-      formInput.addEventListener('input', function () {
-        if (formInput.value.length === 6) {
-          formInput.value += ')';
-        }
-        if (formInput.value.length === 10) {
-          formInput.value += '-';
-        }
-        if (formInput.value.length === 13) {
-          formInput.value += '-';
-        }
-      });
+    var mask = new IMask(formPhoneInput, maskOptions);
+    var mask = new IMask(modalPhoneInput, maskOptions);
 
-      formInput.addEventListener('blur', function () {
-        if ((formInput.value === '+7(') || (formInput.value === '')) {
-          formInput.value = '';
+    var focusInput = function (input) {
+      input.addEventListener('focus', function () {
+        if (input.value === '') {
+          input.value = '+7(';
         }
       });
     };
 
-    formTelefonMask(phoneNumberInput);
-    formTelefonMask(phoneModalInput);
+    var blurInput = function (phoneInput) {
+      phoneInput.addEventListener('blur', function () {
+        if ((phoneInput.value === '+7(') || (phoneInput.value === '')) {
+          phoneInput.value = '';
+        }
+      });
+    };
+
+    focusInput(formPhoneInput);
+    focusInput(modalPhoneInput);
+    blurInput(formPhoneInput);
+    blurInput(modalPhoneInput);
   }
 })();

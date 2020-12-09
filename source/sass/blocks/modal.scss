@@ -25,7 +25,7 @@
   z-index: 120;
   box-sizing: border-box;
 
-  background-color: #00b2ff;
+  background-color: $form-color;
 }
 
 .modal form {
@@ -50,9 +50,9 @@
   font-size: 28px;
   line-height: 39px;
   font-weight: 400;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
 
-  color: #ffffff;
+  color: $form-text;
 }
 
 .modal p {
@@ -65,7 +65,7 @@
   text-align: left;
   box-sizing: border-box;
 
-  color: #ffffff;
+  color: $form-text;
 }
 
 .modal__name-wrapper,
@@ -84,7 +84,7 @@
   box-sizing: border-box;
   border: none;
 
-  color: #ffffff;
+  color: $form-text;
   background-color: transparentize($color: #ffffff, $amount: 0.9);
 }
 
@@ -92,7 +92,7 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #ffffff;
+  color: $form-text;
 }
 
 .modal__phone-wrapper {
@@ -111,7 +111,7 @@
   top: 12px;
   left: 16px;
 
-  color: #ffffff;
+  color: $form-text;
 }
 
 .modal__textarea-wrapper {
@@ -131,7 +131,7 @@
   position: relative;
   border: none;
 
-  color: #ffffff;
+  color: $form-text;
   background-color: transparentize($color: #ffffff, $amount: 0.9);
 }
 
@@ -139,7 +139,7 @@
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: $form-text;
 }
 
 .modal button {
@@ -151,13 +151,13 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: $roboto-condensed;
   letter-spacing: 0.05em;
   border-radius: 5px;
   text-transform: uppercase;
 
   border: 1px solid #ffffff;
-  color: #ffffff;
+  color: $form-text;
   background-color: transparentize(#ffffff, 0.9);
 }
 
