@@ -50,7 +50,7 @@
   list-style: none;
 }
 
-.main-footer__social-list li {
+.main-footer__social-item {
   margin-left: 15px;
   cursor: pointer;
 }
@@ -60,13 +60,26 @@
   cursor: pointer;
 }
 
-.main-footer__social-list li:first-child {
+.main-footer__social-item:first-child {
   margin-left: 0;
 }
 
-.main-footer__social-list li:nth-child(3n + 3) {
+.main-footer__social-item:nth-child(3n + 3) {
   margin-top: -1px;
   margin-left: 16px;
+}
+
+.main-footer__social-list .main-footer__social-link {
+  display: block;
+}
+
+.main-footer__social-list svg {
+  fill: #cdcdcd;
+}
+
+.main-footer__social-item:hover svg,
+.main-footer__social-link:focus svg {
+  fill: $form-color;
 }
 
 .main-footer__sections-wrapper {
@@ -112,6 +125,11 @@
   color: $footer-text;
 }
 
+.main-footer__sections-list a:hover,
+.main-footer__sections-list a:focus {
+  color: $form-color;
+}
+
 .main-footer__contacts-wrapper {
   margin-left: 7.968%;
 }
@@ -144,6 +162,18 @@
   cursor: pointer;
 
   color: $footer-text;
+}
+
+.main-footer__contacts-list li:nth-child(4n + 1) {
+  font-size: 15px;
+  line-height: 25px;
+
+  color: transparentize($color: $footer-text, $amount: 0.5);
+}
+
+.main-footer__contacts-list a:hover,
+.main-footer__contacts-list a:focus {
+  color: $form-color;
 }
 
 .main-footer__copyright-wrapper {
@@ -183,6 +213,11 @@
   margin-left: 67px;
 
   color: $footer-text;
+}
+
+.main-footer__copyright-list a:hover,
+.main-footer__copyright-list a:focus {
+  color: $form-color;
 }
 
 @media (max-width: $tablet-width-only) {
@@ -326,7 +361,9 @@
 
   .main-footer__sections-wrapper {
     margin-left: 0;
-    margin-top: 78px;
+    margin-top: 48px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 290px;
     position: relative;
 
@@ -335,7 +372,7 @@
 
       position: absolute;
 
-      top: -30px;
+      top: 0;
       left: -15px;
       width: 320px;
       height: 1px;
@@ -351,9 +388,9 @@
   }
 
   .main-footer__contacts-wrapper {
-    margin-left: auto;
-    margin-top: 56px;
-    margin-right: 0;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 25px;
     width: 290px;
     position: relative;
 
@@ -362,7 +399,7 @@
 
       position: absolute;
 
-      top: -30px;
+      top: 0;
       left: -15px;
       width: 320px;
       height: 1px;
@@ -376,7 +413,7 @@
 
       position: absolute;
 
-      top: 40px;
+      top: 70px;
       left: -15px;
       width: 320px;
       height: 1px;
@@ -395,7 +432,7 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 30px;
     width: 20px;
     height: 20px;
     margin-left: auto;

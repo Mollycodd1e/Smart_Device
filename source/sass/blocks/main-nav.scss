@@ -29,6 +29,7 @@
   align-self: center;
   border: none;
   cursor: pointer;
+  outline: none;
 
   background-color: transparent;
 }
@@ -44,6 +45,12 @@
 
   background-color: #ffffff;
   box-shadow: 0 12px 0 #ffffff;
+}
+
+.main-nav__menu-button:hover::before,
+.main-nav__menu-button:focus::before {
+  background-color: $form-color;
+  box-shadow: 0 12px 0 $form-color;
 }
 
 .main-nav__contacts-list {
@@ -74,6 +81,12 @@
   cursor: pointer;
 }
 
+.main-nav__contacts-list a:hover,
+.main-nav__contacts-list a:focus {
+  color: $form-color;
+  outline: none;
+}
+
 .main-nav__contacts-list svg {
   margin-bottom: -2px;
 }
@@ -100,6 +113,13 @@
 
   background-color: transparent;
   color: $nav-color;
+}
+
+.main-nav__call-button:hover,
+.main-nav__call-button:focus {
+  color: $form-color;
+  outline: none;
+  border: 1px solid $form-color;
 }
 
 @media (max-width: $tablet-width-only) {

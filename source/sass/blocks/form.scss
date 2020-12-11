@@ -65,6 +65,7 @@
 .form input {
   appearance: none;
   border: none;
+  border-radius: 0;
   width: 270px;
   font-size: 16px;
   line-height: 22px;
@@ -119,6 +120,7 @@
   padding: 11px 16px;
   position: relative;
   border: none;
+  resize: none;
 
   color: $form-text;
   background-color: transparentize($color: #ffffff, $amount: 0.9);
@@ -144,10 +146,17 @@
   letter-spacing: 0.05em;
   border-radius: 5px;
   text-transform: uppercase;
+  cursor: pointer;
 
   border: 1px solid #ffffff;
   color: $form-text;
   background-color: transparentize(#ffffff, 0.9);
+}
+
+.form button:hover,
+.form button:focus {
+  color: $form-color;
+  background-color: #ffffff;
 }
 
 .form__checkbox-wrapper {
@@ -167,6 +176,12 @@
   font-size: 14px;
   line-height: 16px;
   opacity: 0.8;
+  cursor: pointer;
+}
+
+.form__checkbox-wrapper label:hover,
+.form__checkbox-wrapper input:focus + label {
+  color: transparentize(#ffffff, 0.5);
 }
 
 .form__checkbox-wrapper input:not(:checked) + label::before {
@@ -181,6 +196,11 @@
 
   background-color: transparent;
   cursor: pointer;
+}
+
+.form__checkbox-wrapper input:not(:checked) + label:hover::before,
+.form__checkbox-wrapper input:focus:not(:checked) + label::before {
+  border: 1px solid transparentize(#ffffff, 0.5);
 }
 
 .form__checkbox-wrapper input:checked + label::after {
@@ -199,6 +219,11 @@
   background-position: center center;
   background-color: transparent;
   cursor: pointer;
+}
+
+.form__checkbox-wrapper input:checked + label:hover::after,
+.form__checkbox-wrapper input:focus:checked + label::after {
+  border: 1px solid transparentize(#ffffff, 0.5);
 }
 
 @media (min-width: $desktop-width) {

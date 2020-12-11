@@ -18,6 +18,10 @@ body {
   background-color: #ffffff;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
   position: absolute;

@@ -15,6 +15,10 @@
   display: block;
 }
 
+.modal--opened body {
+  overflow: hidden;
+}
+
 .modal__wrapper {
   position: relative;
   top: 136px;
@@ -83,6 +87,7 @@
   padding-bottom: 16px;
   box-sizing: border-box;
   border: none;
+  border-radius: 0;
 
   color: $form-text;
   background-color: transparentize($color: #ffffff, $amount: 0.9);
@@ -130,6 +135,7 @@
   padding: 12px 23px;
   position: relative;
   border: none;
+  resize: none;
 
   color: $form-text;
   background-color: transparentize($color: #ffffff, $amount: 0.9);

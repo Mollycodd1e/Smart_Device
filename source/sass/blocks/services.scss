@@ -86,6 +86,7 @@
 .services__list a:hover,
 .services__list a:focus {
   outline-color: $form-color;
+  color: $form-color;
 }
 
 .services__list h3 {

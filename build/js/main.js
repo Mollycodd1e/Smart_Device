@@ -9,12 +9,14 @@
     var modalCloseButton = modal.querySelector('.modal__close-wrapper button');
     var nameInput = modal.querySelector('.modal__name-wrapper input');
     var blackLayer = document.querySelector('.black-layer');
+    var bod = document.querySelector('body');
 
     var closeModalOnEsc = function (evtBoard) {
       if ((evtBoard.key === 'Escape') && (modal.classList.contains('modal--opened'))) {
         nameInput.blur();
         modal.classList.remove('modal--opened');
         modal.classList.add('modal--closed');
+        bod.classList.remove('scroll-hidden');
       }
     };
 
@@ -22,12 +24,14 @@
       nameInput.blur();
       modal.classList.remove('modal--opened');
       modal.classList.add('modal--closed');
+      bod.classList.remove('scroll-hidden');
     });
 
     modalOpenButton.addEventListener('click', function () {
       if (modal.classList.contains('modal--closed')) {
         modal.classList.remove('modal--closed');
         modal.classList.add('modal--opened');
+        bod.classList.add('scroll-hidden');
         nameInput.focus();
       }
     });
@@ -37,6 +41,7 @@
         nameInput.blur();
         modal.classList.remove('modal--opened');
         modal.classList.add('modal--closed');
+        bod.classList.remove('scroll-hidden');
       }
     });
 
@@ -126,6 +131,31 @@
       localStorage.setItem('Name', nameInputValue.value);
       localStorage.setItem('Phone', phoneInputValue.value);
       localStorage.setItem('Question', questionInputValue.value);
+    });
+  }
+})();
+
+'use strict';
+
+(function () {
+  var mobileContactList = document.querySelector('.main-footer__contacts-wrapper');
+
+  if (document.querySelector('.main-footer__contacts-wrapper')) {
+    var mobileSectionList = document.querySelector('.main-footer__sections-wrapper');
+
+    mobileContactList.addEventListener('click', function () {
+      if (mobileContactList.classList.contains('main-footer__contacts-wrapper--close')) {
+        mobileContactList.classList.remove('main-footer__contacts-wrapper--close');
+        mobileContactList.classList.add('main-footer__contacts-wrapper--open');
+
+        if (mobileSectionList.classList.contains('main-footer__sections-wrapper--open')) {
+          mobileSectionList.classList.remove('main-footer__sections-wrapper--open');
+          mobileSectionList.classList.add('main-footer__sections-wrapper--close');
+        }
+      } else {
+        mobileContactList.classList.remove('main-footer__contacts-wrapper--open');
+        mobileContactList.classList.add('main-footer__contacts-wrapper--close');
+      }
     });
   }
 })();
