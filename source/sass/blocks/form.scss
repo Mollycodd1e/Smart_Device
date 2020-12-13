@@ -7,7 +7,8 @@
 
   background-image: url("../img/form_background-desktop.png");
   background-repeat: no-repeat;
-  background-position: top -60px left 175px;
+  background-position: center center;
+  background-size: contain;
 }
 
 .form__wrapper {
@@ -229,8 +230,10 @@
 @media (min-width: $desktop-width) {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .form {
-      background-image: url("../img/form_background-desktop@x2.png") 1890px 764px;
-      background-position: top -60px left 175px;
+      background-image: url("../img/form_background-desktop@x2.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
     }
   }
 }
@@ -270,8 +273,9 @@
 
   .form input {
     width: 280px;
-    padding-top: 18px;
-    padding-bottom: 19px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 17px;
   }
 
   .form__phone-wrapper {
@@ -363,6 +367,7 @@
 
   .form input {
     width: 290px;
+    padding-bottom: 16px;
   }
 
   .form__phone-wrapper {
@@ -390,6 +395,8 @@
   .form button {
     margin-top: 24px;
     width: 290px;
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 
   .form__checkbox-wrapper {

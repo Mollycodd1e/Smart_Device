@@ -8,11 +8,17 @@
 @media (max-width: $tablet-width-only) {
   .main-page__wrapper {
     background-image: url("../img/background_advantages-tablet.jpg");
+    background-position: top 90px center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .main-page__wrapper {
     background-image: url("../img/background_advantages-mobile.jpg");
+    background-position: bottom 225px center;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 }

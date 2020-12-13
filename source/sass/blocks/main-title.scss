@@ -116,7 +116,7 @@
 @media (min-width: $desktop-width) {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .main-title {
-      background-image: url("../img/background-desktop@x2.png") 1906px 878px;
+      background-image: url("../img/background-desktop@x2.png");
       background-position: center center;
       background-size: cover;
     }
@@ -130,6 +130,7 @@
     padding-left: 11.3%;
     padding-right: 23.6%;
     background-image: url("../img/background-tablet.png");
+    background-position: center left 40px;
   }
 
   .main-title__wrapper {

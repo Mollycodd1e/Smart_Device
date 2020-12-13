@@ -1,6 +1,6 @@
 .services {
   padding-top: 88px;
-  padding-bottom: 127px;
+  padding-bottom: 112px;
 
   background-color: #1b2d37;
 }
@@ -35,6 +35,7 @@
 .services__item {
   position: relative;
   width: 31.65%;
+  margin-bottom: 15px;
   min-height: 620px;
   cursor: pointer;
 }
@@ -137,7 +138,7 @@
 @media (max-width: $tablet-width-only) {
   .services {
     padding-top: 50px;
-    padding-bottom: 78px;
+    padding-bottom: 63px;
   }
 
   .services__title {
@@ -162,19 +163,19 @@
   }
 
   .services__item:nth-child(3n + 4) {
-    margin-top: 55px;
+    margin-top: 40px;
   }
 
   .services__item:nth-child(3n + 2) {
     width: 720px;
     margin-left: 0;
-    margin-top: 55px;
+    margin-top: 40px;
   }
 
   .services__item:nth-child(3n + 3) {
     width: 720px;
     margin-left: 0;
-    margin-top: 46px;
+    margin-top: 31px;
   }
 
   .services__item:nth-child(3n + 1) div {
@@ -233,7 +234,7 @@
 
 @media (max-width: $mobile-width-only) {
   .services {
-    padding-bottom: 64px;
+    padding-bottom: 49px;
   }
 
   .services__title {
@@ -255,17 +256,17 @@
   }
 
   .services__item:nth-child(3n + 4) {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .services__item:nth-child(3n + 2) {
     width: 290px;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .services__item:nth-child(3n + 3) {
     width: 290px;
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .services__item:nth-child(3n + 1) div {

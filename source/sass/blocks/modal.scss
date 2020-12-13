@@ -167,6 +167,11 @@
   background-color: transparentize(#ffffff, 0.9);
 }
 
+.modal button:hover,
+.modal button:focus {
+  opacity: 0.5;
+}
+
 .modal__close-wrapper {
   width: 25px;
   height: 25px;
