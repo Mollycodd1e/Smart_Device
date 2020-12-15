@@ -12,7 +12,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 
-  background-image: url("../img/2005-desktop.jpg");
+  background-image: url("../img/about-desktop.jpg");
   background-repeat: no-repeat;
   background-position: left -30px top 5px;
 }
@@ -78,7 +78,7 @@
 @media (min-width: $desktop-width) {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .main-about__wrapper {
-      background-image: url("../img/2005-desktop@x2.jpg") 317px 220px;
+      background-image: url("../img/about-desktop@x2.jpg") 317px 220px;
     }
   }
 }
@@ -96,7 +96,7 @@
     padding-left: 185px;
     padding-bottom: 50px;
 
-    background-image: url("../img/2005-tablet.jpg");
+    background-image: url("../img/about-tablet.jpg");
     background-position: left -25px top -2px;
   }
 
@@ -133,7 +133,7 @@
   @media (min-width: $desktop-width) {
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       .main-about__wrapper {
-        background-image: url("../img/2005-tabletp@x2.jpg") 362px 251px;
+        background-image: url("../img/about-tabletp@x2.jpg") 362px 251px;
       }
     }
   }
