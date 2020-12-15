@@ -32,7 +32,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/*.js","!source/js/vendor/imask.min.js", "!source/js/utils.js")
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js"))
 });
@@ -93,7 +93,9 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source//*.ico"
+    "source//*.ico",
+    "source/js/vendor/imask.min.js",
+    "source/js/utils.js"
     ], {
       base: "source"
     })

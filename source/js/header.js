@@ -3,7 +3,7 @@
 (function () {
   var modal = document.querySelector('.modal');
 
-  if (document.querySelector('.modal')) {
+  if (modal) {
     var navigation = document.querySelector('.main-nav');
     var modalOpenButton = navigation.querySelector('.main-nav__call-button');
     var modalCloseButton = modal.querySelector('.modal__close-wrapper button');
