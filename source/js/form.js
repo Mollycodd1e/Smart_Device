@@ -7,7 +7,7 @@
     var formPhoneInput = form.querySelector('.form__phone-wrapper input');
 
     var maskOptions = {
-      mask: '+{7}(000)000-00-00'
+      mask: '+{7}(000)000-00-00',
     };
 
     new IMask(formPhoneInput, maskOptions);

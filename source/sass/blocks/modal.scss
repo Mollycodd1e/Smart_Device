@@ -267,3 +267,18 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.modal__checkbox-wrapper label:hover,
+.modal__checkbox-wrapper input:focus + label {
+  color: transparentize(#ffffff, 0.5);
+}
+
+.modal__checkbox-wrapper input:not(:checked) + label:hover::before,
+.modal__checkbox-wrapper input:focus:not(:checked) + label::before {
+  border: 1px solid transparentize(#ffffff, 0.5);
+}
+
+.modal__checkbox-wrapper input:checked + label:hover::after,
+.modal__checkbox-wrapper input:focus:checked + label::after {
+  border: 1px solid transparentize(#ffffff, 0.5);
+}

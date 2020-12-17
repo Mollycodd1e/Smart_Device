@@ -46,5 +46,19 @@
     });
 
     document.addEventListener('keydown', closeModalOnEsc);
+
+    document.addEventListener('keydown', function (evttab) {
+      if ((evttab.key === 'Tab') && (modal.classList.contains('modal--opened')) && (document.activeElement === modalCloseButton)) {
+        nameInput.focus();
+        evttab.preventDefault();
+      }
+    });
+
+    document.addEventListener('keydown', function (evtshift) {
+      if ((evtshift.shiftKey && evtshift.key === 'Tab') && (modal.classList.contains('modal--opened')) && (document.activeElement === nameInput)) {
+        modalCloseButton.focus();
+        evtshift.preventDefault();
+      }
+    });
   }
 })();
